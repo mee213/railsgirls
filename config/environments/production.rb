@@ -21,7 +21,7 @@ Railsgirls::Application.configure do
   config.assets.digest = true
 
   # For Devise
-  # config.action_mailer.default_url_options = { :host => 'ACTUALHOSTNAMEHERE' }
+  config.action_mailer.default_url_options = { :host => 'http://radiant-bastion-3843.herokuapp.com' }
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
