@@ -16,13 +16,24 @@
 						<li class="active">
 							<a href="/ideas">Ideas</a>
 						</li>
+						<%= render 'devise/menu/registration_items' %>
+						<%= render 'devise/menu/login_items' %>
 					</ul>
+					
 				</div>
 			</div>
 		</div>
+
 		<div class="container">
+			<% if flash[:notice] %>
+				<p class="notice"><%= notice %></p>
+			<% end %>
+			<% if flash[:alert] %>
+				<p class="alert"><%= alert %></p>
+			<% end %>
 			<%= yield %>
 		</div>
+		
 		<footer>
 			<div class="container">
 				Rails Girls 2013
